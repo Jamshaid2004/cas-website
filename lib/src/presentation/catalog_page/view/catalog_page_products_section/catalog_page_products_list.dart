@@ -65,8 +65,17 @@ class CatalogProductItemView extends StatelessWidget {
               ),
               Expanded(
                 flex: 2,
-                child: Container(
-                  color: Colors.amber,
+                child: Center(
+                  child: Padding(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: width * 0.01,
+                    ),
+                    child: Text(
+                      product.productDescription,
+                      style: const TextStyle(
+                          color: ApplicationColors.appBlackTextColor),
+                    ),
+                  ),
                 ),
               ),
               Expanded(

@@ -1,5 +1,7 @@
 import 'package:cas_website/core/app_color.dart';
+import 'package:cas_website/core/app_snack_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class StoreButtonsRow extends StatelessWidget {
   const StoreButtonsRow(
@@ -40,8 +42,11 @@ class PlayAndAppStoreButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Size(:width, :height) = MediaQuery.sizeOf(context);
-    return GestureDetector(
-      onTap: () {},
+    return InkWell(
+      focusColor: ApplicationColors.transparentColor,
+      hoverColor: ApplicationColors.transparentColor,
+      splashColor: ApplicationColors.transparentColor,
+      onTap: () => _launchUrl(context),
       child: Container(
         width: width * 0.085,
         height: height * 0.05,
@@ -81,5 +86,12 @@ class PlayAndAppStoreButton extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  void _launchUrl(BuildContext context) async {
+    if (!await launchUrlString(url)) {
+      ApplicationSnackBar.getSnackBar(
+          context: context, text: 'Could not launch url');
+    }
   }
 }

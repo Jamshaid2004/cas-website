@@ -5,11 +5,14 @@ class CatalogPageContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       children: [
-        CatalogProductsTitle(),
-        CatalogProductsSubtitle(),
-        CatalogProducts(),
+        const CatalogProductsTitle(),
+        const CatalogProductsSubtitle(),
+        const CatalogProducts(),
+        SizedBox(
+          height: MediaQuery.sizeOf(context).height * 0.1,
+        )
       ],
     );
   }
