@@ -12,15 +12,16 @@ class HomePageServicesRow extends StatelessWidget {
       children: [
         ServiceWidget(
             serviceText: 'Mobile Apps',
-            serviceImage: 'assets/images/mobile_dev.png'),
+            serviceImage: 'assets/images/service_mobile_dev.png'),
         ServiceWidget(
-            serviceText: 'Web Apps', serviceImage: 'assets/images/web_dev.png'),
+            serviceText: 'Web Apps',
+            serviceImage: 'assets/images/service_web_dev.png'),
         ServiceWidget(
             serviceText: 'Cross Platform',
-            serviceImage: 'assets/images/cross_platform.png'),
+            serviceImage: 'assets/images/service_cross_platform.png'),
         ServiceWidget(
             serviceText: 'Devops',
-            serviceImage: 'assets/images/mobile_dev.png'),
+            serviceImage: 'assets/images/service_mobile_dev.png'),
       ],
     );
   }

@@ -29,7 +29,7 @@ class HomePageShowcaseTitleText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Size(:width) = MediaQuery.sizeOf(context);
+    final Size(:width, :height) = MediaQuery.sizeOf(context);
     final textStyle = GoogleFonts.quicksand(
       fontSize: width * 0.02,
       color: ApplicationColors.appBlackTextColor,
@@ -63,27 +63,27 @@ class HomePageShowcaseProjectRow extends StatelessWidget {
       children: [
         HomePageShowcaseProject(
             widthPar: width * 0.13,
-            image: 'assets/images/mobile_dev.png',
+            image: 'assets/images/showcase_live_doc.png',
             title: 'Live Doc Tele Medicine',
             description: liveDocTeleMedicineDescrition),
         HomePageShowcaseProject(
             widthPar: width * 0.15,
-            image: 'assets/images/mobile_dev.png',
+            image: 'assets/images/showcase_elms.png',
             title: 'ELMS',
             description: elmsDescrition),
         HomePageShowcaseProject(
             widthPar: width * 0.17,
-            image: 'assets/images/mobile_dev.png',
+            image: 'assets/images/service_mobile_dev.png',
             title: 'Smart Table',
             description: smartTableDescrition),
         HomePageShowcaseProject(
             widthPar: width * 0.15,
-            image: 'assets/images/mobile_dev.png',
+            image: 'assets/images/showcase_invitor.png',
             title: 'Invitor App',
             description: invitorDescrition),
         HomePageShowcaseProject(
             widthPar: width * 0.13,
-            image: 'assets/images/mobile_dev.png',
+            image: 'assets/images/showcase_carwash.png',
             title: 'Car Wash App',
             description: carWashDescrition),
       ],
@@ -110,44 +110,60 @@ class HomePageShowcaseProject extends StatelessWidget {
       color: ApplicationColors.appBlackTextColor,
       fontWeight: FontWeight.bold,
     );
-    final textStyleDescription = GoogleFonts.quicksand(
+    // final textStyleDescription = GoogleFonts.quicksand(
+    //   fontSize: width * 0.006,
+    //   color: ApplicationColors.appBlackTextColor,
+    //   fontWeight: FontWeight.bold,
+    // );
+    final textStyleDescription = TextStyle(
       fontSize: width * 0.006,
       color: ApplicationColors.appBlackTextColor,
       fontWeight: FontWeight.bold,
     );
-    return Container(
-      height: widthPar * 1.5,
-      width: widthPar,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            ApplicationColors.appWhiteTextColor,
-            ApplicationColors.appGreyTextColor,
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: widthPar * 0.03),
+      child: Container(
+        height: widthPar * 1.5,
+        width: widthPar,
+        decoration: const BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black26,
+              offset: Offset(1, 2),
+              blurRadius: 5,
+              spreadRadius: 3,
+            )
+          ],
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              ApplicationColors.appWhiteTextColor,
+              ApplicationColors.lightGreyColor,
+            ],
+          ),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(top: widthPar * 0.1),
+              child: Image.asset(
+                image,
+                height: widthPar * 0.4,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(4),
+              child: FittedBox(child: Text(title, style: textStyleTitle)),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(4.0),
+              child: Text(description, style: textStyleDescription),
+            ),
           ],
         ),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: EdgeInsets.only(top: widthPar * 0.1),
-            child: Image.asset(
-              image,
-              height: widthPar * 0.4,
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(4),
-            child: FittedBox(child: Text(title, style: textStyleTitle)),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(4.0),
-            child: Text(description, style: textStyleDescription),
-          ),
-        ],
       ),
     );
   }

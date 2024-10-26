@@ -12,7 +12,7 @@ class HomePageShowcaseBackground extends StatelessWidget {
         DecoratedBox(
           decoration: const BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/images/straight_rectangle.png'),
+                image: AssetImage('assets/images/rectangle_straight.png'),
                 fit: BoxFit.fill),
           ),
           child: SizedBox(

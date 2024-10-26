@@ -38,6 +38,8 @@ dependencies:
   bloc: ^8.1.4
   google_fonts: ^6.2.1
   go_router: ^14.3.0
+  flutter_animate_on_scroll: ^0.1.1
+  dotted_border: ^2.1.0
 
 dev_dependencies:
   flutter_test:

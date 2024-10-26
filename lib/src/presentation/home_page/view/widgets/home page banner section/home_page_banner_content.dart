@@ -89,6 +89,8 @@ class HomePageBannerLearningButton extends StatelessWidget {
       padding: EdgeInsets.all(width * 0.02),
       child: InkWell(
         onTap: () => context.go('/${AcademyPage.pageAddress}'),
+        highlightColor: ApplicationColors.transparentColor,
+        hoverColor: ApplicationColors.transparentColor,
         child: DecoratedBox(
           decoration: BoxDecoration(
               color: ApplicationColors.appWhiteTextColor,

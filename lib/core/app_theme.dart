@@ -1,3 +1,4 @@
+import 'package:cas_website/core/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -10,6 +11,7 @@ class ApplicationTheme {
   static ThemeData _getThemeData() {
     return ThemeData(
       textTheme: TextTheme(titleLarge: GoogleFonts.quicksand()),
+      primaryColor: ApplicationColors.lightBlueThemeColor,
       textButtonTheme: TextButtonThemeData(
         style: ButtonStyle(
           textStyle: WidgetStatePropertyAll(

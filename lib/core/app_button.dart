@@ -15,6 +15,8 @@ class AppButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
+      highlightColor: ApplicationColors.transparentColor,
+      hoverColor: ApplicationColors.transparentColor,
       child: FittedBox(
         child: DecoratedBox(
           decoration: const BoxDecoration(
