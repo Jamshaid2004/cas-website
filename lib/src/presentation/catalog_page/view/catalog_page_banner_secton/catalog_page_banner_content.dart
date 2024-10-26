@@ -22,6 +22,7 @@ class CatalogBannerContent extends StatelessWidget {
         Image.asset(
           'assets/images/banner_image_catalog_page.png',
           width: width * imageWidth,
+          fit: BoxFit.fill,
         )
       ],
     );
