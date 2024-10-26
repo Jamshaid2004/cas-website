@@ -1,4 +1,4 @@
-import '../src/presentation/catalog_page/models/catalog_product_model.dart';
+import 'package:cas_website/src/presentation/catalog_page/models/catalog_product_model.dart';
 
 const List<CatalogProduct> catalogProductsList = [
   CatalogProduct(

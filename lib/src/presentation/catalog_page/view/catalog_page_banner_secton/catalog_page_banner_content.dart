@@ -1,14 +1,8 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../../core/app_color.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CatalogBannerContent extends StatelessWidget {
   const CatalogBannerContent({super.key});
 
-  //....CONTANTS
-  static const catalogBannerImage =
-      'assets/images/catalog_page_banner_image.png';
   static const imageWidth = 0.3;
 
   @override
@@ -26,7 +20,7 @@ class CatalogBannerContent extends StatelessWidget {
           ],
         ),
         Image.asset(
-          'assets/images/catalog_page_banner_image.png',
+          'assets/images/banner_image_catalog_page.png',
           width: width * imageWidth,
         )
       ],

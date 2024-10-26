@@ -1,6 +1,4 @@
-import 'package:cas_website/core/app_color.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class AcademyPageCoursesTitleText extends StatelessWidget {
   const AcademyPageCoursesTitleText({super.key});
@@ -14,7 +12,7 @@ class AcademyPageCoursesTitleText extends StatelessWidget {
       fontWeight: FontWeight.bold,
     );
     return Padding(
-      padding: EdgeInsets.only(bottom: width * 0.01, top: width * 0.1),
+      padding: EdgeInsets.only(bottom: width * 0.01, top: width * 0.01),
       child: Text(
         'Discover our Courses',
         style: textStyle,

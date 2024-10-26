@@ -1,12 +1,15 @@
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
   static const pageAddress = 'about';
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(child: Text('About Page')),
+    return Scaffold(
+      appBar: AboutPageAppBar(
+        context: context,
+      ),
+      body: const Center(child: AboutPageBannerWidget()),
     );
   }
 }

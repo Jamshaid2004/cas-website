@@ -1,15 +1,4 @@
-import 'package:cas_website/src/presentation/academy_page/view/academy_page.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-
-import '../../../../core/app_button.dart';
-import '../../../../core/app_color.dart';
-import '../../../../core/app_snack_bar.dart';
-import '../../about_page/view/about_page.dart';
-import '../../careers_page/view/careers_page.dart';
-import '../../home_page/view/home_page.dart';
-import '../../home_page/view/widgets/home_page_app_bar.dart';
-import '../../services_page/view/services_page.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CatalogPageAppBar extends AppBar {
   //....INSTANCE MEMEBERS

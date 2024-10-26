@@ -1,4 +1,4 @@
-import 'package:cas_website/src/presentation/academy_page/model/course_model.dart';
+import 'bavel.dart';
 
 const List<CourseModel> coursesList = [
   CourseModel(

@@ -1,7 +1,4 @@
-import 'package:cas_website/core/app_color.dart';
-import 'package:flutter/material.dart';
-
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class AcademyPageBannerContent extends StatelessWidget {
   const AcademyPageBannerContent({super.key});
@@ -21,7 +18,7 @@ class AcademyPageBannerContent extends StatelessWidget {
           ],
         ),
         Image.asset(
-          'assets/images/academy_page_banner_image.png',
+          'assets/images/banner_image_academy_page.png',
           width: width * 0.3,
         )
       ],

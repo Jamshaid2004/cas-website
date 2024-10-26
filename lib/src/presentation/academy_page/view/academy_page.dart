@@ -1,7 +1,4 @@
-import 'package:cas_website/src/presentation/academy_page/view/academy%20page%20banner%20section/academy_page_banner.dart';
-import 'package:cas_website/src/presentation/academy_page/view/academy%20page%20courses%20section/academy_page_courses.dart';
-import 'package:cas_website/src/presentation/academy_page/view/academy_page_app_bar.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class AcademyPage extends StatelessWidget {
   const AcademyPage({super.key});
@@ -18,6 +15,7 @@ class AcademyPage extends StatelessWidget {
           children: [
             AcademyPageBannerWidget(),
             AcademyPageCoursesWidget(),
+            HomePageFooterSectionWidget(),
           ],
         ),
       ),

@@ -1,7 +1,4 @@
-import 'package:cas_website/src/presentation/home_page/view/widgets/home%20page%20footer%20section/home_page_footer_background.dart';
-import 'package:cas_website/src/presentation/home_page/view/widgets/home%20page%20footer%20section/home_page_footer_content.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageFooterSectionWidget extends StatelessWidget {
   const HomePageFooterSectionWidget({super.key});
@@ -12,7 +9,6 @@ class HomePageFooterSectionWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        HomePageFooterTrackRecordText(),
         Stack(
           alignment: Alignment.topCenter,
           children: [

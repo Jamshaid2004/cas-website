@@ -1,7 +1,4 @@
-import 'package:cas_website/core/app_color.dart';
-import 'package:dotted_border/dotted_border.dart';
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageApproachContent extends StatelessWidget {
   const HomePageApproachContent({super.key});

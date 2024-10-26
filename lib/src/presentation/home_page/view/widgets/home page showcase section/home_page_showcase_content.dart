@@ -1,9 +1,6 @@
-import 'package:cas_website/core/app_button.dart';
-import 'package:cas_website/core/app_color.dart';
-import 'package:cas_website/src/presentation/catalog_page/view/catalog_page.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
+
+
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageShowcaseContent extends StatelessWidget {
   const HomePageShowcaseContent({super.key});
