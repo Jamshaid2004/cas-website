@@ -1,22 +1,24 @@
+
+
 import 'package:cas_website/core/bavel.dart';
 
-class CatalogBannerContent extends StatelessWidget {
-  const CatalogBannerContent({super.key});
+class AboutPageBannnerContent extends StatelessWidget {
+  const AboutPageBannnerContent({super.key});
 
   static const imageWidth = 0.3;
-
   @override
   Widget build(BuildContext context) {
     final Size(:width) = MediaQuery.sizeOf(context);
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            CatalogBannerHeading(),
-            CatalogBannerDescription(),
+            AboutBannerHeading(),
+            AboutBannerDescription(),
           ],
         ),
         Image.asset(
@@ -28,8 +30,8 @@ class CatalogBannerContent extends StatelessWidget {
   }
 }
 
-class CatalogBannerHeading extends StatelessWidget {
-  const CatalogBannerHeading({super.key});
+class AboutBannerHeading extends StatelessWidget {
+  const AboutBannerHeading({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -40,24 +42,12 @@ class CatalogBannerHeading extends StatelessWidget {
       fontWeight: FontWeight.bold,
     );
 
-    return Padding(
-      padding: EdgeInsets.only(
-        bottom: width * 0.01,
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text('Your Gateway to', style: textStyle),
-          Text('Exceptional Products', style: textStyle),
-        ],
-      ),
-    );
+    return Center(child: Text('Mission Statement', style: textStyle));
   }
 }
 
-class CatalogBannerDescription extends StatelessWidget {
-  const CatalogBannerDescription({super.key});
+class AboutBannerDescription extends StatelessWidget {
+  const AboutBannerDescription({super.key});
 
   @override
   Widget build(BuildContext context) {

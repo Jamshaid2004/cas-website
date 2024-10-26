@@ -1,6 +1,4 @@
-import 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/service_page_services_list.dart';
-import 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/service_page_services_title.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class ServciePageServicesWidget extends StatelessWidget {
   const ServciePageServicesWidget({super.key});

@@ -1,7 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-
-import '../../../../../core/app_color.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CatalogProductsTitle extends StatelessWidget {
   const CatalogProductsTitle({super.key});
@@ -15,7 +12,7 @@ class CatalogProductsTitle extends StatelessWidget {
       fontWeight: FontWeight.bold,
     );
     return Padding(
-      padding: EdgeInsets.only(bottom: width * 0.01, top: width * 0.1),
+      padding: EdgeInsets.only(bottom: width * 0.01, top: width * 0.01),
       child: Text(
         'Explore Our Top-Rated Products',
         style: textStyle,

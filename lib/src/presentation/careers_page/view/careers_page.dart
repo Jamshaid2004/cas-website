@@ -1,8 +1,4 @@
-import 'package:cas_website/src/presentation/careers_page/view/careers%20page%20banner%20section/careers_page_banner.dart';
-import 'package:cas_website/src/presentation/careers_page/view/careers_page_app_bar.dart';
-
-import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CareersPage extends StatelessWidget {
   const CareersPage({super.key});

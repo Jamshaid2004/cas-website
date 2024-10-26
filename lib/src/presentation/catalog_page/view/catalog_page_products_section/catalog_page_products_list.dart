@@ -1,6 +1,4 @@
-import 'package:cas_website/core/catalog_products.dart';
-import 'package:cas_website/src/presentation/catalog_page/models/catalog_product_model.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CatalogProducts extends StatelessWidget {
   const CatalogProducts({super.key});

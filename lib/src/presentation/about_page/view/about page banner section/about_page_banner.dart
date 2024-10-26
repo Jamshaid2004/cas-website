@@ -1,7 +1,7 @@
 import 'package:cas_website/core/bavel.dart';
 
-class ServicesPageBannerWidget extends StatelessWidget {
-  const ServicesPageBannerWidget({super.key});
+class AboutPageBannerWidget extends StatelessWidget {
+  const AboutPageBannerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class ServicesPageBannerWidget extends StatelessWidget {
       alignment: Alignment.center,
       children: [
         HomePageBannerBackground(),
-        ServicesPageBannerContent(),
+        AboutPageBannnerContent(),
       ],
     );
   }

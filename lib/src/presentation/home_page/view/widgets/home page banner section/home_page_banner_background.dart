@@ -1,5 +1,4 @@
-import 'package:cas_website/core/app_color.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageBannerBackground extends StatelessWidget {
   const HomePageBannerBackground({super.key});

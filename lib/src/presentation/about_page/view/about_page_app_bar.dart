@@ -1,16 +1,8 @@
 import 'package:cas_website/core/bavel.dart';
 
-class CatalogPageAppBar extends AppBar {
-  //....INSTANCE MEMEBERS
+class AboutPageAppBar extends AppBar {
   final BuildContext context;
-  //....CONSTANTS
-  static const logo = 'assets/images/cas_logo_two.png';
-  static const services = 'Services';
-  static const academy = 'Academy';
-  static const about = 'About';
-  static const careers = 'Careers';
-  static const btnText = '   Contact Us   ';
-  CatalogPageAppBar({super.key, required this.context})
+  AboutPageAppBar({super.key, required this.context})
       : super(
           automaticallyImplyLeading: false,
           title: Row(
@@ -19,9 +11,9 @@ class CatalogPageAppBar extends AppBar {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: InkWell(
-                  onTap: () => context.go('/${HomePage.pageAddress}'),
+                  onTap: () => context.pop(),
                   child: Image.asset(
-                    logo,
+                    'assets/images/cas_logo_two.png',
                     width: kTextTabBarHeight,
                   ),
                 ),
@@ -31,19 +23,19 @@ class CatalogPageAppBar extends AppBar {
                   OverflowBar(
                     children: [
                       HomePageToolBarItemWidget(
-                          text: services,
-                          onPressed: () =>
-                              context.go('/${ServicesPage.pageAddress}')),
-                      HomePageToolBarItemWidget(
-                          text: academy,
+                          text: 'Academy',
                           onPressed: () =>
                               context.go('/${AcademyPage.pageAddress}')),
                       HomePageToolBarItemWidget(
-                          text: about,
+                          text: 'Catalog',
                           onPressed: () =>
-                              context.go('/${AboutPage.pageAddress}')),
+                              context.go('/${CatalogPage.pageAddress}')),
                       HomePageToolBarItemWidget(
-                          text: careers,
+                          text: 'Services',
+                          onPressed: () =>
+                              context.go('/${ServicesPage.pageAddress}')),
+                      HomePageToolBarItemWidget(
+                          text: 'Careers',
                           onPressed: () =>
                               context.go('/${CareersPage.pageAddress}')),
                     ],
@@ -53,12 +45,12 @@ class CatalogPageAppBar extends AppBar {
               Builder(
                 builder: (context) {
                   return AppButton(
-                    buttonText: btnText,
+                    buttonText: ' Contact Us ',
                     textSize: 13,
                     onTap: () {
                       ApplicationSnackBar.getSnackBar(
                         context: context,
-                        text: 'Contact us clicked',
+                        text: 'Sign in Dialog',
                       );
                     },
                   );

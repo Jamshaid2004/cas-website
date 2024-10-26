@@ -1,9 +1,4 @@
-import 'package:cas_website/core/app_button.dart';
-import 'package:cas_website/core/app_color.dart';
-import 'package:cas_website/src/presentation/academy_page/view/academy_page.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageFooterContent extends StatelessWidget {
   const HomePageFooterContent({super.key});

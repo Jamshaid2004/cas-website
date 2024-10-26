@@ -1,13 +1,4 @@
-import 'package:cas_website/core/app_button.dart';
-import 'package:cas_website/core/app_color.dart';
-import 'package:cas_website/core/app_snack_bar.dart';
-import 'package:cas_website/src/presentation/about_page/view/about_page.dart';
-import 'package:cas_website/src/presentation/careers_page/view/careers_page.dart';
-import 'package:cas_website/src/presentation/catalog_page/view/catalog_page.dart';
-import 'package:cas_website/src/presentation/home_page/view/widgets/home_page_app_bar.dart';
-import 'package:cas_website/src/presentation/services_page/view/services_page.dart';
-import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class AcademyPageAppBar extends AppBar {
   final BuildContext context;

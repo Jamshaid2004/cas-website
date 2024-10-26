@@ -1,10 +1,4 @@
-import 'package:cas_website/src/presentation/about_page/view/about_page.dart';
-import 'package:cas_website/src/presentation/academy_page/view/academy_page.dart';
-import 'package:cas_website/src/presentation/careers_page/view/careers_page.dart';
-import 'package:cas_website/src/presentation/catalog_page/view/catalog_page.dart';
-import 'package:cas_website/src/presentation/home_page/view/home_page.dart';
-import 'package:cas_website/src/presentation/services_page/view/services_page.dart';
-import 'package:go_router/go_router.dart';
+import 'bavel.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(routes: <RouteBase>[

@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class HomePageShowcaseBackground extends StatelessWidget {
   const HomePageShowcaseBackground({super.key});

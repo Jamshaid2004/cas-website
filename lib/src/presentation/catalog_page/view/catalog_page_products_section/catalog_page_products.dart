@@ -1,5 +1,4 @@
-import 'package:cas_website/src/presentation/catalog_page/view/catalog_page_products_section/catalog_page_products_title.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 class CatalogPageContent extends StatelessWidget {
   const CatalogPageContent({super.key});

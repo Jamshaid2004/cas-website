@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 @immutable
 class CatalogProduct {

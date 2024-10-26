@@ -1,6 +1,4 @@
-import 'package:cas_website/core/app_router.dart';
-import 'package:cas_website/core/app_theme.dart';
-import 'package:flutter/material.dart';
+import 'package:cas_website/core/bavel.dart';
 
 void main() {
   runApp(const MyApp());
