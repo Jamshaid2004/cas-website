@@ -6,10 +6,16 @@ class AcademyPageCoursesWidget extends StatelessWidget {
   const AcademyPageCoursesWidget({super.key});
   @override
   Widget build(BuildContext context) {
-    return const Column(children: [
-      AcademyPageCoursesTitleText(),
-      AcademyPageCoursesSubTitleText(),
-      AcademyPageCoursesListWidget(),
-    ]);
+    final Size(:width) = MediaQuery.sizeOf(context);
+    return Padding(
+      padding: EdgeInsets.only(bottom: width * 0.1),
+      child: const Column(
+        children: [
+          AcademyPageCoursesTitleText(),
+          AcademyPageCoursesSubTitleText(),
+          AcademyPageCoursesListWidget(),
+        ],
+      ),
+    );
   }
 }

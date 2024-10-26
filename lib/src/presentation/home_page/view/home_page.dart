@@ -24,6 +24,7 @@ class HomePage extends StatelessWidget {
             HomePageShowcaseSectionWidget(),
             HomePageApproachSectionWidget(),
             HomePageContactSectionWidget(),
+            HomePageFooterTrackRecordText(),
             HomePageFooterSectionWidget(),
           ],
         ),

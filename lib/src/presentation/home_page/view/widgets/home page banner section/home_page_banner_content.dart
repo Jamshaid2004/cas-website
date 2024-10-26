@@ -23,7 +23,7 @@ class HomePageBannerContent extends StatelessWidget {
           ],
         ),
         Image.asset(
-          'assets/images/home_page_banner_image.png',
+          'assets/images/banner_image_home_page.png',
           width: width * 0.5,
         )
       ],

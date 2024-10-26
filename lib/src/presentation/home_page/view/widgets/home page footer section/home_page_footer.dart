@@ -12,7 +12,6 @@ class HomePageFooterSectionWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        HomePageFooterTrackRecordText(),
         Stack(
           alignment: Alignment.topCenter,
           children: [

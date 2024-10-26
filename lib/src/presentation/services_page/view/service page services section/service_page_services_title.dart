@@ -2,8 +2,8 @@ import 'package:cas_website/core/app_color.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AcademyPageCoursesTitleText extends StatelessWidget {
-  const AcademyPageCoursesTitleText({super.key});
+class ServicePageCoursesTitleText extends StatelessWidget {
+  const ServicePageCoursesTitleText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,15 +16,15 @@ class AcademyPageCoursesTitleText extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: width * 0.01, top: width * 0.01),
       child: Text(
-        'Discover our Courses',
+        'Explore Our Services',
         style: textStyle,
       ),
     );
   }
 }
 
-class AcademyPageCoursesSubTitleText extends StatelessWidget {
-  const AcademyPageCoursesSubTitleText({super.key});
+class ServicePageCoursesSubTitleText extends StatelessWidget {
+  const ServicePageCoursesSubTitleText({super.key});
 
   @override
   Widget build(BuildContext context) {

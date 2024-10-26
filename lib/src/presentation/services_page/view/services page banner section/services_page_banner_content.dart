@@ -1,10 +1,9 @@
 import 'package:cas_website/core/app_color.dart';
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 
-class AcademyPageBannerContent extends StatelessWidget {
-  const AcademyPageBannerContent({super.key});
+class ServicesPageBannerContent extends StatelessWidget {
+  const ServicesPageBannerContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,21 +15,21 @@ class AcademyPageBannerContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AcademyPageBannerLeadingText(),
-            AcademyPageBannerFollowingText(),
+            ServicesPageBannerLeadingText(),
+            ServicesPageBannerFollowingText(),
           ],
         ),
         Image.asset(
-          'assets/images/banner_image_academy_page.png',
-          width: width * 0.3,
-        )
+          'assets/images/banner_image_services_page.png',
+          width: width * 0.2,
+        ),
       ],
     );
   }
 }
 
-class AcademyPageBannerLeadingText extends StatelessWidget {
-  const AcademyPageBannerLeadingText({super.key});
+class ServicesPageBannerLeadingText extends StatelessWidget {
+  const ServicesPageBannerLeadingText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,16 +46,16 @@ class AcademyPageBannerLeadingText extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('Knowledge is Power:', style: textStyle),
-          Text('Grow with Us!', style: textStyle),
+          Text('Elevate Your Experience', style: textStyle),
+          Text('with Our Expert Services', style: textStyle),
         ],
       ),
     );
   }
 }
 
-class AcademyPageBannerFollowingText extends StatelessWidget {
-  const AcademyPageBannerFollowingText({super.key});
+class ServicesPageBannerFollowingText extends StatelessWidget {
+  const ServicesPageBannerFollowingText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -70,14 +69,10 @@ class AcademyPageBannerFollowingText extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(style: textStyle, children: const [
-        TextSpan(
-            text: "At CAS, we believe that knowledge is the foundation of\n"),
-        TextSpan(
-            text: "personal and professional growth. Our diverse range of\n"),
-        TextSpan(
-            text: "courses is designed to empower you with the skills and\n"),
-        TextSpan(
-            text: "insights needed to thrive in today's fast-paced world\n"),
+        TextSpan(text: "Discover a range of tailored services designed\n"),
+        TextSpan(text: "to enhance your journey. OUr expert team is\n"),
+        TextSpan(text: "dedicated to delievering exceptional results\n"),
+        TextSpan(text: "that exceed your expectations.\n"),
       ]),
     );
   }

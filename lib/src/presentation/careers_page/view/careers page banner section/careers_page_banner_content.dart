@@ -1,10 +1,9 @@
 import 'package:cas_website/core/app_color.dart';
 import 'package:flutter/material.dart';
-
 import 'package:google_fonts/google_fonts.dart';
 
-class AcademyPageBannerContent extends StatelessWidget {
-  const AcademyPageBannerContent({super.key});
+class CareersPageBannerContent extends StatelessWidget {
+  const CareersPageBannerContent({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +15,12 @@ class AcademyPageBannerContent extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            AcademyPageBannerLeadingText(),
-            AcademyPageBannerFollowingText(),
+            CareersPageBannerLeadingText(),
+            CareersPageBannerFollowingText(),
           ],
         ),
         Image.asset(
-          'assets/images/banner_image_academy_page.png',
+          'assets/images/banner_image_careers_page.png',
           width: width * 0.3,
         )
       ],
@@ -29,8 +28,8 @@ class AcademyPageBannerContent extends StatelessWidget {
   }
 }
 
-class AcademyPageBannerLeadingText extends StatelessWidget {
-  const AcademyPageBannerLeadingText({super.key});
+class CareersPageBannerLeadingText extends StatelessWidget {
+  const CareersPageBannerLeadingText({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -47,7 +46,7 @@ class AcademyPageBannerLeadingText extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Text('Knowledge is Power:', style: textStyle),
+          Text('Work in CAS', style: textStyle),
           Text('Grow with Us!', style: textStyle),
         ],
       ),
@@ -55,8 +54,8 @@ class AcademyPageBannerLeadingText extends StatelessWidget {
   }
 }
 
-class AcademyPageBannerFollowingText extends StatelessWidget {
-  const AcademyPageBannerFollowingText({super.key});
+class CareersPageBannerFollowingText extends StatelessWidget {
+  const CareersPageBannerFollowingText({super.key});
 
   @override
   Widget build(BuildContext context) {
