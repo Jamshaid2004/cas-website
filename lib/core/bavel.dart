@@ -54,7 +54,7 @@ export 'package:cas_website/src/presentation/home_page/view/widgets/home%20page%
 export 'package:cas_website/src/presentation/home_page/view/widgets/home%20page%20showcase%20section/home_page_showcase_section.dart';
 export 'package:cas_website/src/presentation/home_page/view/widgets/home_page_app_bar.dart';
 export 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/servcie_page_services.dart';
-export 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/service_page_services_list.dart';
+export 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/service_list/service_page_services_list.dart';
 export 'package:cas_website/src/presentation/services_page/view/service%20page%20services%20section/service_page_services_title.dart';
 export 'package:cas_website/src/presentation/services_page/view/services%20page%20banner%20section/services_page_banner.dart';
 export 'package:cas_website/src/presentation/services_page/view/services%20page%20banner%20section/services_page_banner_content.dart';
