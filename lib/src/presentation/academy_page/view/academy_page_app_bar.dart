@@ -1,4 +1,5 @@
 import 'package:cas_website/core/bavel.dart';
+import 'package:cas_website/src/presentation/academy_page/view/academy_page_sign_in_dialog.dart';
 
 class AcademyPageAppBar extends AppBar {
   final BuildContext context;
@@ -45,12 +46,12 @@ class AcademyPageAppBar extends AppBar {
               Builder(
                 builder: (context) {
                   return AppButton(
-                    buttonText: '   Sign in   ',
+                    buttonText: ' Join Meeting ',
                     textSize: 13,
                     onTap: () {
-                      ApplicationSnackBar.getSnackBar(
+                      showDialog(
                         context: context,
-                        text: 'Sign in Dialog',
+                        builder: signInDialog,
                       );
                     },
                   );

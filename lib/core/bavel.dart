@@ -30,6 +30,7 @@ export 'package:cas_website/src/presentation/catalog_page/view/catalog_page_bann
 export 'package:cas_website/src/presentation/catalog_page/view/catalog_page_products_section/catalog_page_products.dart';
 export 'package:cas_website/src/presentation/catalog_page/view/catalog_page_products_section/catalog_page_products_list.dart';
 export 'package:cas_website/src/presentation/catalog_page/view/catalog_page_products_section/catalog_page_products_title.dart';
+export 'package:cas_website/src/presentation/catalog_page/view/catalog_page_products_section/catalog_page_store_buttons.dart';
 export 'package:cas_website/src/presentation/home_page/controller/home_page_events.dart';
 export 'package:cas_website/src/presentation/home_page/controller/home_page_states.dart';
 export 'package:cas_website/src/presentation/home_page/view/home_page.dart';
