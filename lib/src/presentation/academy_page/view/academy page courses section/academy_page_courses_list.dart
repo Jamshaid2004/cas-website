@@ -49,7 +49,7 @@ class AcademyPageCoursesListWidget extends StatelessWidget {
                 courseImage: 'assets/images/course_blockchain_dev.png',
                 courseTitle: 'Blockchain Development',
                 courseDescription:
-                    "In our Android development course, you will gain\n in-depth knowledge of building applications for\n the Android platform. You’ll start by mastering\n Android Studio, the official Integrated\n Development Environment (IDE), and learn\n programming languages like Java and Kotlin to\n develop robust applications. The course focuses\n on user interface design, teaching you how to\n create attractive and responsive layouts using\n XML and Android's design principles. You'll also\n explore data storage and management\n techniques, including how to use SQLite.",
+                    "This course offers a thorough introduction to\n blockchain tecnology, its underlyin principles,\n and its diverse applications. Participants will\n explore the mechanics of blockchain, its\n potential to transform industries, and the\n challenges associated with its implementation.\n By the end of the course, students will have a\n solid foundation in blockchain concepts and be\n equipped to engage with this emerging \n technology.",
               ),
             ),
             Expanded(

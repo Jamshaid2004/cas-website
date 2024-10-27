@@ -9,6 +9,7 @@ class CatalogPageContent extends StatelessWidget {
       children: [
         CatalogProductsTitle(),
         CatalogProductsSubtitle(),
+        CatalogProducts(),
       ],
     );
   }
