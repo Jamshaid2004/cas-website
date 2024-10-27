@@ -33,7 +33,7 @@ class ServicesPageBannerLeadingText extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size(:width) = MediaQuery.sizeOf(context);
     final textStyle = GoogleFonts.quicksand(
-      fontSize: width * 0.03,
+      fontSize: width * 0.035,
       color: ApplicationColors.lightBlueThemeColor,
       fontWeight: FontWeight.bold,
     );
@@ -59,9 +59,8 @@ class ServicesPageBannerFollowingText extends StatelessWidget {
   Widget build(BuildContext context) {
     final Size(:width) = MediaQuery.sizeOf(context);
     final textStyle = GoogleFonts.quicksand(
-        fontSize: width * 0.012,
+        fontSize: width * 0.014,
         letterSpacing: 1,
-        height: width * 0.0012,
         color: ApplicationColors.appBlackTextColor,
         fontWeight: FontWeight.w500);
     return RichText(
