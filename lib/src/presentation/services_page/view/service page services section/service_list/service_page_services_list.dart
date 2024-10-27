@@ -26,7 +26,8 @@ class _ServicePageCoursesListWidgetState
   @override
   void initState() {
     super.initState();
-    _controller = List.generate(9, (_) => FlipCardController());
+    _controller =
+        List.generate(serviceProductsList.length, (_) => FlipCardController());
     // secondController = FlipController();
   }
 
@@ -49,7 +50,7 @@ class _ServicePageCoursesListWidgetState
           crossAxisCount: ServicePageCoursesListWidget.crossAxisCount),
       physics: const NeverScrollableScrollPhysics(),
       shrinkWrap: true,
-      itemCount: 9,
+      itemCount: serviceProductsList.length,
       itemBuilder: (context, index) {
         log("index $index");
         return ServicePageCourseItemView(
